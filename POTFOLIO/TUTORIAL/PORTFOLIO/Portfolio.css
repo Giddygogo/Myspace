@@ -1,0 +1,223 @@
+body{
+margin: 0px;
+box-sizing: border-box;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-1{
+    background:url('./Me.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;  
+    height: 750px;
+}
+.layer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.493);
+    position: absolute; top: 0; left: 0;
+    height: 100%; width: 100%;
+}
+
+.navbar{
+    display: flex; height:60px;
+    justify-content:space-between;
+    box-shadow: 0 4px 6px 0 rgba(3, 0, 8, 0.5);
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    z-index: 1;
+    color: #ffffff;
+    margin-right: 70px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .navbar ul li a:after{
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    display: block;
+    content: '';
+    background: #ff4444;
+    transition: all 0.3s;
+}
+.navbar ul li a:hover:after{
+    width: 100%;
+}
+.Logo-link{
+    color:#ffffff;
+    z-index: 1;
+    padding: 5px;
+    margin-left:60px;
+    text-decoration: none;
+}
+.logo{
+font-size:30px;
+}
+.text{
+   display: flex;
+   flex-direction: column;
+   align-items:flex-end;
+   padding-top: 160px;
+   width: 100%;
+}
+.text h1{
+    padding-right: 250px;
+    color:#ffffff;
+    margin-top: 0px;
+    margin-bottom:20px;
+    font-size: 75px;
+    letter-spacing: 3px;
+    padding-top: 0px;
+    word-spacing:8px;;
+    animation:name; 
+    animation-duration: 3s; 
+    animation-fill-mode: forwards;
+	position: relative;  
+}
+@keyframes name{
+	0%   {top: -310px} 
+	100% {top: 15px}
+}
+
+.text p{
+    padding-top: 20px;
+    padding-right:100px;
+    color:#ffffff;
+    word-spacing:4px ;
+    font-size: 15px;
+    animation: p;
+	animation-duration: 3s; 
+    animation-fill-mode: forwards; 
+    position: relative; 
+    line-height: 1.8rem;
+    font-size: 18px;
+}
+@keyframes p{
+	0%   {bottom: -200px}
+	100% {bottom:0px }
+}
+.text h6{
+    word-spacing:6px;
+    padding-top: 10px;
+    padding-right: 330px;
+    word-spacing:6px;
+    margin: 0px 0px;
+    color:#ffffff;
+    font-size:25px;
+    animation: h6; 
+    animation-duration: 3s; 
+    animation-fill-mode: forwards;
+	position: relative;
+}
+@keyframes h6{
+	0%   {left: -1380px}
+	100% {left:0px }
+}
+.text h5{
+    margin-bottom: 0px;
+    padding-right: 580px;
+    padding-top: 50px;
+    word-spacing:6px;
+    margin: 0px 0px;
+    color:#ffffff;
+    font-size:25px;
+    animation: h6; 
+    animation-duration: 3s; 
+    animation-fill-mode: forwards;
+	position: relative;
+}
+@keyframes h6{
+	0%   {left: -1380px}
+	100% {left:0px }
+}
+.text button{
+    margin-right: 700px;
+    margin-top: 80px;
+    padding: 13px 65px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing:3px;
+    z-index:1;
+    cursor: pointer;
+    animation: btn; 
+	animation-delay:1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative; 
+	opacity: 0; 
+    transition-property: transform; 
+}
+.btn:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ff0202a1;
+     /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,0.1),
+     7px 7px 40px 0px rgba(109, 233, 202,0.1),
+     4px 4px 7px 0px rgba(109, 233, 202, 0.1); */
+    transition: all 0.3s ease;
+  }
+.btn:hover:after{
+    left: 0;
+    width: 100%;
+}
+.btn:active{
+    top: 2px;
+}
+.btn:hover{
+    color:#ffffff;
+    border:none;
+}
+@keyframes btn{
+	0%   {opacity: 0}
+	100% {opacity: 1}
+}
+.container-2{
+    display: flex;
+    height:700px;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:#524747;
+    color: #ffffff;
+    width:20%;
+}
+.section1 h1{
+    padding-top: 30px;
+    word-spacing: 3px;
+}
+.section1 p{
+    line-height: 30px;
+    word-spacing:2px;
+    padding: 0px 35px;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    width:80%;
+
+}
+
+
+
+   
+
